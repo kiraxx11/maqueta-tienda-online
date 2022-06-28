@@ -1,0 +1,413 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25em;
+}
+
+button {
+    font-size: inherit;
+    font-weight: bold;
+    padding: 15px 20px;
+    background-color: rgb(255, 103, 0);
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contenedor-1 {
+    width: 100%;
+}
+
+.contenedor-2 {
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+header {
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+    padding: 15px 20px;
+    width: auto;
+}
+
+header .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+header a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: inherit;
+    color: rgb(255, 103, 0);
+    cursor: pointer;
+
+
+}
+
+header a:hover {
+    color: #fff;
+
+}
+
+header li:hover {
+    background-color: rgb(255, 103, 0);
+}
+
+#inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 0.123)), url("https://www.notebookcheck.org/uploads/tx_nbc2/4_to_3_Teaser_Xiaomi_11_Lite_5G_NE.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#inicio #form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+
+}
+
+
+
+#inicio #form #email {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.616);
+    color: black;
+    border: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 350px;
+    outline: transparent;
+}
+
+#inicio #form #submit {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 103, 0);
+    color: #fff;
+    cursor: pointer;
+}
+
+#productos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(245, 245, 245);
+
+}
+
+.producto {
+    background-color: #fff;
+    padding: 10px 15px;
+    margin: 10px auto;
+    border-radius: 5px;
+    ;
+
+}
+
+.producto:hover {
+    box-shadow: 0 0 4px 0 rgb(85 85 85 / 40%)
+}
+
+.producto img {
+    width: 50vw;
+    border-bottom: 1px solid #eee;
+}
+
+.producto .precio {
+    font-weight: bold;
+    color: rgb(255, 103, 0);
+}
+
+#sobre-nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 30px auto;
+
+}
+
+#sobre-nosotros iframe {
+    max-width: 800px;
+    max-height: 600px;
+    width: 70vw;
+    height: 40vh;
+    margin-bottom: 20px;
+
+}
+
+#sobre-nosotros p {
+    text-align: justify;
+    margin: 30px auto;
+    padding: 0px 20px;
+
+}
+
+footer {
+
+    background-color: rgb(245, 245, 245);
+    padding: 20px;
+}
+
+footer>ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer>ul>li {
+    padding: 0 10px;
+}
+
+footer>span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+}
+
+footer>ul>li>a {
+    text-decoration: none;
+    color: black;
+}
+
+@media(min-width:720px) {
+    body {
+        background-color: rgb(245, 245, 245);
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 10px 0px 10px;
+        position: fixed;
+        width: 100%;
+        box-shadow: 0 0 4px 2px rgb(85 85 85 / 40%)
+    }
+
+    header .logo {
+        padding: 0;
+    }
+
+    header .contenedor {
+        flex-direction: row;
+    }
+
+    header nav {
+        padding-bottom: 0;
+        flex-direction: row;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header li {
+        transition: .2s linear;
+    }
+
+    header a {
+        padding: 16px 40px;
+    }
+
+    header a:hover {
+        border-bottom: 2px solid rgb(255, 103, 0);
+        background-color: rgb(245, 245, 245);
+        color: rgb(255, 103, 0);
+        transform: scale(2, 2);
+        box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 0.315);
+    }
+
+    header li:hover {
+        background-color: transparent;
+        transform: scale(1.05, 1.05);
+    }
+
+    #inicio {
+        height: 100vh;
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://www.notebookcheck.org/uploads/tx_nbc2/4_to_3_Teaser_Xiaomi_11_Lite_5G_NE.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #inicio #form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-family: inherit;
+        line-height: inherit;
+    }
+
+    #inicio #form h1 {
+        font-size: 7em;
+        padding-bottom: 20px;
+        text-shadow: 0px 0px 10px black;
+        color: rgb(245, 245, 245);
+    }
+
+    #inicio #form #email {
+        font-size: 1.5em;
+        padding: 10px 25px;
+        color: black;
+        border: none;
+        outline: transparent;
+        font-weight: bold;
+        margin-bottom: 30px;
+        width: 40vw;
+        box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.315);
+    }
+
+    #inicio #form #submit {
+        font-size: 2em;
+        font-weight: bold;
+        padding: 20px 40px;
+        cursor: pointer;
+        box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.315);
+    }
+
+
+    #productos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: row;
+
+        flex-wrap: wrap;
+        padding: 0px 0px 10vh 0px;
+
+
+    }
+
+    #productos h1 {
+        width: 100%;
+        padding: 30px 0px;
+        font-size: 4em;
+    }
+
+    .producto {
+
+        padding: 20px 10px;
+        margin: 10px auto;
+        border-radius: 10px;
+        transition: .2s linear;
+
+    }
+
+    .producto:hover {
+        box-shadow: 0 0 4px 0 rgb(85 85 85 / 40%);
+        transform: scale(1.15, 1.15);
+
+    }
+
+    .producto img {
+        max-width: 20vw;
+        border-radius: 10px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .producto .precio {
+        font-weight: bold;
+        color: rgb(255, 103, 0);
+    }
+
+    #sobre-nosotros {
+        justify-content: space-between; 
+        flex-direction: row;
+        margin: 30px auto;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 4px 0 rgb(85 85 85 / 40%);
+        padding: 30px;
+        flex-wrap: wrap;
+    }
+
+    #sobre-nosotros iframe {
+        width: 40vw;
+    }
+    #sobre-nosotros h1 {
+        width: 100%;
+        font-weight: bold;
+        padding: auto;
+    }
+
+
+    #sobre-nosotros p {
+        text-align: justify;
+        margin: 0;
+        padding: 0px 20px;
+        max-width: 40vw;
+
+    }
+
+   
+
+}
